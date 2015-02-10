@@ -1,0 +1,298 @@
+/* line 4, ../sass/onepage-scroll.scss */
+body {
+  font-family: 'Roboto',Arial,sans-serif;
+  color: #fff;
+  background: #f8d135;
+}
+
+/* line 10, ../sass/onepage-scroll.scss */
+body,
+html {
+  text-align: center;
+  overflow: hidden;
+  background: #555;
+  -moz-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+/* line 19, ../sass/onepage-scroll.scss */
+body,
+html,
+.main {
+  float: left;
+}
+
+/* line 25, ../sass/onepage-scroll.scss */
+body,
+html,
+.main,
+.onepage-wrapper {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 36, ../sass/onepage-scroll.scss */
+a {
+  color: #888;
+  text-decoration: none;
+}
+/* line 40, ../sass/onepage-scroll.scss */
+a:visited {
+  color: #888;
+  text-decoration: none;
+}
+/* line 45, ../sass/onepage-scroll.scss */
+a:hover, a:active {
+  color: #333;
+}
+
+/* line 50, ../sass/onepage-scroll.scss */
+.header h1,
+.nav-top span.right a {
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+/* line 55, ../sass/onepage-scroll.scss */
+.container .header {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.01);
+}
+/* line 61, ../sass/onepage-scroll.scss */
+.container .header span {
+  display: block;
+  font-size: 60%;
+  opacity: 0.8;
+  padding-bottom: 0.6em;
+}
+
+/* line 69, ../sass/onepage-scroll.scss */
+.icon-th:before {
+  content: '\e800';
+}
+
+/* line 71, ../sass/onepage-scroll.scss */
+.nav-top {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 0.65em;
+  line-height: 2.6;
+  height: 36px;
+}
+/* line 80, ../sass/onepage-scroll.scss */
+.nav-top a {
+  padding: 0.41em 1em;
+  letter-spacing: 0.1em;
+  color: #444;
+  display: inline-block;
+}
+/* line 86, ../sass/onepage-scroll.scss */
+.nav-top a:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+/* line 92, ../sass/onepage-scroll.scss */
+.nav-top .right {
+  float: right;
+}
+/* line 95, ../sass/onepage-scroll.scss */
+.nav-top .right a {
+  float: left;
+  display: block;
+}
+
+/* line 102, ../sass/onepage-scroll.scss */
+body .header {
+  color: #ecf0f1;
+}
+
+/* line 106, ../sass/onepage-scroll.scss */
+.main p {
+  color: #ecf0f1;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* line 112, ../sass/onepage-scroll.scss */
+.nav-top a {
+  color: #ecf0f1;
+}
+
+/* line 116, ../sass/onepage-scroll.scss */
+h1 {
+  color: #ecf0f1;
+}
+
+/* line 120, ../sass/onepage-scroll.scss */
+.main {
+  margin-top: -310px;
+}
+
+/* line 124, ../sass/onepage-scroll.scss */
+.menu,
+.header,
+.nav-top {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 132, ../sass/onepage-scroll.scss */
+.main section.page1 {
+  background: url("../images/img1.jpg");
+  background-size: 100%;
+}
+/* line 136, ../sass/onepage-scroll.scss */
+.main section.page1 .page_container {
+  position: absolute;
+  bottom: 0;
+  margin-left: -325px;
+  left: 50%;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+/* line 145, ../sass/onepage-scroll.scss */
+.main section.page1 h1 {
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 40px;
+}
+/* line 151, ../sass/onepage-scroll.scss */
+.main section.page1 p {
+  line-height: 160%;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 159, ../sass/onepage-scroll.scss */
+.main section.page2 {
+  background: url("../images/img2.jpg");
+  background-size: 100%;
+}
+/* line 163, ../sass/onepage-scroll.scss */
+.main section.page2 .page_container {
+  position: absolute;
+  margin-left: -420px;
+  left: 50%;
+  top: 40%;
+  margin-bottom: 50px;
+  max-width: 445px;
+}
+/* line 172, ../sass/onepage-scroll.scss */
+.main section.page2 h1 {
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 70px;
+  color: black;
+  margin-bottom: 10px;
+  text-align: left;
+}
+/* line 182, ../sass/onepage-scroll.scss */
+.main section.page2 p {
+  line-height: 160%;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 190, ../sass/onepage-scroll.scss */
+.main section.page3 {
+  background: url("../images/img3.jpg");
+  background-size: 100%;
+}
+/* line 194, ../sass/onepage-scroll.scss */
+.main section.page3 .page_container {
+  position: absolute;
+  margin-left: -325px;
+  left: 50%;
+  top: 40%;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+/* line 202, ../sass/onepage-scroll.scss */
+.main section.page3 .page_container h1 {
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 70px;
+  color: #999;
+}
+/* line 209, ../sass/onepage-scroll.scss */
+.main section.page3 .page_container p {
+  color: #999;
+}
+
+/* line 215, ../sass/onepage-scroll.scss */
+.viewing-page-2 .header h1,
+.viewing-page-2 .nav-top span.right a {
+  color: black;
+}
+
+/* line 220, ../sass/onepage-scroll.scss */
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+}
+/* line 227, ../sass/onepage-scroll.scss */
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 233, ../sass/onepage-scroll.scss */
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 242, ../sass/onepage-scroll.scss */
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+/* line 246, ../sass/onepage-scroll.scss */
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+}
+/* line 252, ../sass/onepage-scroll.scss */
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 263, ../sass/onepage-scroll.scss */
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px;
+}
