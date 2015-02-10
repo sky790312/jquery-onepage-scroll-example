@@ -27,8 +27,7 @@ html,
 /* line 25, ../sass/onepage-scroll.scss */
 body,
 html,
-.main,
-.onepage-wrapper {
+.main {
   display: block;
   position: static;
   padding: 0;
@@ -36,22 +35,22 @@ html,
   height: 100%;
 }
 
-/* line 36, ../sass/onepage-scroll.scss */
+/* line 35, ../sass/onepage-scroll.scss */
 a {
   color: #888;
   text-decoration: none;
 }
-/* line 40, ../sass/onepage-scroll.scss */
+/* line 39, ../sass/onepage-scroll.scss */
 a:visited {
   color: #888;
   text-decoration: none;
 }
-/* line 45, ../sass/onepage-scroll.scss */
+/* line 44, ../sass/onepage-scroll.scss */
 a:hover, a:active {
   color: #333;
 }
 
-/* line 50, ../sass/onepage-scroll.scss */
+/* line 49, ../sass/onepage-scroll.scss */
 .header h1,
 .nav-top span.right a {
   -moz-transition: all 500ms ease-in-out;
@@ -60,27 +59,12 @@ a:hover, a:active {
   transition: all 500ms ease-in-out;
 }
 
-/* line 55, ../sass/onepage-scroll.scss */
-.container .header {
-  margin: 0 auto;
-  padding: 5px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.01);
-}
-/* line 61, ../sass/onepage-scroll.scss */
-.container .header span {
-  display: block;
-  font-size: 60%;
-  opacity: 0.8;
-  padding-bottom: 0.6em;
-}
-
-/* line 69, ../sass/onepage-scroll.scss */
+/* line 54, ../sass/onepage-scroll.scss */
 .icon-th:before {
   content: '\e800';
 }
 
-/* line 71, ../sass/onepage-scroll.scss */
+/* line 56, ../sass/onepage-scroll.scss */
 .nav-top {
   background: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -90,56 +74,58 @@ a:hover, a:active {
   line-height: 2.6;
   height: 36px;
 }
-/* line 80, ../sass/onepage-scroll.scss */
+/* line 65, ../sass/onepage-scroll.scss */
 .nav-top a {
   padding: 0.41em 1em;
   letter-spacing: 0.1em;
   color: #444;
   display: inline-block;
 }
-/* line 86, ../sass/onepage-scroll.scss */
+/* line 71, ../sass/onepage-scroll.scss */
 .nav-top a:hover {
   background: rgba(255, 255, 255, 0.95);
   color: #333;
 }
-/* line 92, ../sass/onepage-scroll.scss */
+/* line 77, ../sass/onepage-scroll.scss */
 .nav-top .right {
   float: right;
 }
-/* line 95, ../sass/onepage-scroll.scss */
+/* line 80, ../sass/onepage-scroll.scss */
 .nav-top .right a {
   float: left;
   display: block;
 }
 
-/* line 102, ../sass/onepage-scroll.scss */
+/* line 87, ../sass/onepage-scroll.scss */
 body .header {
   color: #ecf0f1;
 }
 
-/* line 106, ../sass/onepage-scroll.scss */
+/* line 91, ../sass/onepage-scroll.scss */
 .main p {
   color: #ecf0f1;
   font-size: 16px;
   font-weight: 100;
 }
 
-/* line 112, ../sass/onepage-scroll.scss */
+/* line 97, ../sass/onepage-scroll.scss */
 .nav-top a {
   color: #ecf0f1;
 }
 
-/* line 116, ../sass/onepage-scroll.scss */
+/* line 101, ../sass/onepage-scroll.scss */
 h1 {
+  font-size: 24px;
   color: #ecf0f1;
+  margin: 20px;
 }
 
-/* line 120, ../sass/onepage-scroll.scss */
+/* line 107, ../sass/onepage-scroll.scss */
 .main {
   margin-top: -310px;
 }
 
-/* line 124, ../sass/onepage-scroll.scss */
+/* line 111, ../sass/onepage-scroll.scss */
 .menu,
 .header,
 .nav-top {
@@ -148,27 +134,27 @@ h1 {
   z-index: 10;
 }
 
-/* line 132, ../sass/onepage-scroll.scss */
+/* line 119, ../sass/onepage-scroll.scss */
 .main section.page1 {
   background: url("../images/img1.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
-/* line 136, ../sass/onepage-scroll.scss */
+/* line 123, ../sass/onepage-scroll.scss */
 .main section.page1 .page_container {
   position: absolute;
   bottom: 0;
   margin-left: -325px;
   left: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   max-width: 650px;
 }
-/* line 145, ../sass/onepage-scroll.scss */
+/* line 132, ../sass/onepage-scroll.scss */
 .main section.page1 h1 {
   letter-spacing: -1px;
   font-weight: 100;
   font-size: 40px;
 }
-/* line 151, ../sass/onepage-scroll.scss */
+/* line 138, ../sass/onepage-scroll.scss */
 .main section.page1 p {
   line-height: 160%;
   font-size: 18px;
@@ -176,12 +162,12 @@ h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 159, ../sass/onepage-scroll.scss */
+/* line 146, ../sass/onepage-scroll.scss */
 .main section.page2 {
   background: url("../images/img2.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
-/* line 163, ../sass/onepage-scroll.scss */
+/* line 150, ../sass/onepage-scroll.scss */
 .main section.page2 .page_container {
   position: absolute;
   margin-left: -420px;
@@ -190,7 +176,7 @@ h1 {
   margin-bottom: 50px;
   max-width: 445px;
 }
-/* line 172, ../sass/onepage-scroll.scss */
+/* line 159, ../sass/onepage-scroll.scss */
 .main section.page2 h1 {
   letter-spacing: -1px;
   font-weight: 100;
@@ -199,7 +185,7 @@ h1 {
   margin-bottom: 10px;
   text-align: left;
 }
-/* line 182, ../sass/onepage-scroll.scss */
+/* line 169, ../sass/onepage-scroll.scss */
 .main section.page2 p {
   line-height: 160%;
   font-size: 18px;
@@ -208,12 +194,12 @@ h1 {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 190, ../sass/onepage-scroll.scss */
+/* line 177, ../sass/onepage-scroll.scss */
 .main section.page3 {
   background: url("../images/img3.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
-/* line 194, ../sass/onepage-scroll.scss */
+/* line 181, ../sass/onepage-scroll.scss */
 .main section.page3 .page_container {
   position: absolute;
   margin-left: -325px;
@@ -222,39 +208,45 @@ h1 {
   margin-bottom: 50px;
   max-width: 650px;
 }
-/* line 202, ../sass/onepage-scroll.scss */
+/* line 189, ../sass/onepage-scroll.scss */
 .main section.page3 .page_container h1 {
   letter-spacing: -1px;
   font-weight: 100;
   font-size: 70px;
   color: #999;
 }
-/* line 209, ../sass/onepage-scroll.scss */
+/* line 196, ../sass/onepage-scroll.scss */
 .main section.page3 .page_container p {
   color: #999;
 }
 
-/* line 215, ../sass/onepage-scroll.scss */
+/* line 202, ../sass/onepage-scroll.scss */
 .viewing-page-2 .header h1,
 .viewing-page-2 .nav-top span.right a {
   color: black;
 }
 
-/* line 220, ../sass/onepage-scroll.scss */
+/* line 207, ../sass/onepage-scroll.scss */
+.viewing-page-3 .header h1,
+.viewing-page-3 .nav-top span.right a {
+  color: red;
+}
+
+/* line 212, ../sass/onepage-scroll.scss */
 .onepage-wrapper {
   width: 100%;
-  height: 100%;
+  height: 130%;
   display: block;
   position: relative;
   padding: 0;
 }
-/* line 227, ../sass/onepage-scroll.scss */
+/* line 219, ../sass/onepage-scroll.scss */
 .onepage-wrapper .section {
   width: 100%;
   height: 100%;
 }
 
-/* line 233, ../sass/onepage-scroll.scss */
+/* line 225, ../sass/onepage-scroll.scss */
 .onepage-pagination {
   position: absolute;
   right: 10px;
@@ -264,19 +256,19 @@ h1 {
   margin: 0;
   padding: 0;
 }
-/* line 242, ../sass/onepage-scroll.scss */
+/* line 234, ../sass/onepage-scroll.scss */
 .onepage-pagination li {
   padding: 0;
   text-align: center;
 }
-/* line 246, ../sass/onepage-scroll.scss */
+/* line 238, ../sass/onepage-scroll.scss */
 .onepage-pagination li a {
   padding: 10px;
   width: 4px;
   height: 4px;
   display: block;
 }
-/* line 252, ../sass/onepage-scroll.scss */
+/* line 244, ../sass/onepage-scroll.scss */
 .onepage-pagination li a:before {
   content: '';
   position: absolute;
@@ -287,7 +279,7 @@ h1 {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 263, ../sass/onepage-scroll.scss */
+/* line 255, ../sass/onepage-scroll.scss */
 .onepage-pagination li a.active:before {
   width: 10px;
   height: 10px;

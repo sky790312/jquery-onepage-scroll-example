@@ -24,8 +24,7 @@ html,
 
 body,
 html,
-.main,
-.onepage-wrapper {
+.main {
   display: block;
   position: static;
   padding: 0;
@@ -50,20 +49,6 @@ a{
 .header h1,
 .nav-top span.right a {
   @include transition(all 500ms ease-in-out);
-}
-
-.container .header {
-  margin: 0 auto;
-  padding: 5px;
-  text-align: center;
-  background: rgba(0,0,0,0.01);
-
-  span {
-    display: block;
-    font-size: 60%;
-    opacity: 0.8;
-    padding-bottom: 0.6em;
-  }
 }
 
 .icon-th:before { content: '\e800'; }
@@ -114,7 +99,9 @@ body .header{
 }
 
 h1 {
+  font-size: 24px;
   color: #ecf0f1;
+  margin: 20px;
 }
 
 .main {
@@ -131,14 +118,14 @@ h1 {
 
 .main section.page1 {
   background: url('../images/img1.jpg');
-  background-size: 100%;
+  background-size: 100% 100%;
 
   .page_container {
     position: absolute;
     bottom: 0;
     margin-left: -325px;
     left: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     max-width: 650px;
   }
 
@@ -158,7 +145,7 @@ h1 {
 
 .main section.page2 {
   background: url('../images/img2.jpg');
-  background-size: 100%;
+  background-size: 100% 100%;
 
   .page_container {
     position: absolute;
@@ -189,7 +176,7 @@ h1 {
 }
 .main section.page3 {
   background: url('../images/img3.jpg');
-  background-size: 100%;
+  background-size: 100% 100%;
 
   .page_container {
     position: absolute;
@@ -217,9 +204,14 @@ h1 {
   color: black;
 }
 
+.viewing-page-3 .header h1,
+.viewing-page-3 .nav-top span.right a {
+  color: red;
+}
+
 .onepage-wrapper {
   width: 100%;
-  height: 100%;
+  height: 130%;
   display: block;
   position: relative;
   padding: 0;
