@@ -8,52 +8,52 @@
     updateURL: false
 	}; // default setting
 
-	$.fn.swipeEvents = function() {
-    return this.each(function() {
+	// $.fn.swipeEvents = function() {
+ //    return this.each(function() {
 
-      var startX,
-          startY,
-          $this = $(this);
+ //      var startX,
+ //          startY,
+ //          $this = $(this);
 
-      $this.bind('touchstart', touchstart);
+ //      $this.bind('touchstart', touchstart);
 
-      function touchstart(event) {
-        var touches = event.originalEvent.touches;
-        if (touches && touches.length) {
-          startX = touches[0].pageX;
-          startY = touches[0].pageY;
-          $this.bind('touchmove', touchmove);
-        }
-        event.preventDefault();
-      }
+ //      function touchstart(event) {
+ //        var touches = event.originalEvent.touches;
+ //        if (touches && touches.length) {
+ //          startX = touches[0].pageX;
+ //          startY = touches[0].pageY;
+ //          $this.bind('touchmove', touchmove);
+ //        }
+ //        event.preventDefault();
+ //      }
 
-      function touchmove(event) {
-        var touches = event.originalEvent.touches;
-        if (touches && touches.length) {
-          var deltaX = startX - touches[0].pageX;
-          var deltaY = startY - touches[0].pageY;
+ //      function touchmove(event) {
+ //        var touches = event.originalEvent.touches;
+ //        if (touches && touches.length) {
+ //          var deltaX = startX - touches[0].pageX;
+ //          var deltaY = startY - touches[0].pageY;
 
-          if (deltaX >= 50) {
-            $this.trigger("swipeLeft");
-          }
-          if (deltaX <= -50) {
-            $this.trigger("swipeRight");
-          }
-          if (deltaY >= 50) {
-            $this.trigger("swipeUp");
-          }
-          if (deltaY <= -50) {
-            $this.trigger("swipeDown");
-          }
-          if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
-            $this.unbind('touchmove', touchmove);
-          }
-        }
-        event.preventDefault();
-      }
+ //          if (deltaX >= 50) {
+ //            $this.trigger("swipeLeft");
+ //          }
+ //          if (deltaX <= -50) {
+ //            $this.trigger("swipeRight");
+ //          }
+ //          if (deltaY >= 50) {
+ //            $this.trigger("swipeUp");
+ //          }
+ //          if (deltaY <= -50) {
+ //            $this.trigger("swipeDown");
+ //          }
+ //          if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
+ //            $this.unbind('touchmove', touchmove);
+ //          }
+ //        }
+ //        event.preventDefault();
+ //      }
 
-    });
-  };
+ //    });
+ //  };
 
   $.fn.onepageScroll = function(options){
     var settings = $.extend({}, defaults, options),
@@ -153,11 +153,11 @@
         paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "'></a></li>";
     });
 
-    el.swipeEvents().bind("swipeDown",  function(){
-      el.moveUp();
-    }).bind("swipeUp", function(){
-      el.moveDown();
-    });
+    // el.swipeEvents().bind("swipeDown",  function(){
+    //   el.moveUp();
+    // }).bind("swipeUp", function(){
+    //   el.moveDown();
+    // });
 
     // Create Pagination and Display Them
     if(settings.pagination == true) {
