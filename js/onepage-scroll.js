@@ -212,13 +212,50 @@
       });
     }
 
-    // mouseweel or DOMMouseScroll for firefox
-    $(document).bind('mousewheel DOMMouseScroll', function(event) {
+    // mouseweel or DOMMouseScroll for firefox with throttle
+    $(document).bind('mousewheel DOMMouseScroll', throttle(function(event) {
       event.preventDefault();
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       init_scroll(event, delta);
-    });
+    }, 150));
     return false;
+
+    // throttle event function
+    function throttle(fn, threshhold, scope) {
+      // default 250 ms if not setting
+      threshhold || (threshhold = 250);
+      var last,
+          deferTimer;
+      return function () {
+        var context = scope || this;
+
+        var now = +new Date,
+            args = arguments;
+        if (last && now < last + threshhold) {
+          // hold on to it
+          clearTimeout(deferTimer);
+          deferTimer = setTimeout(function () {
+            last = now;
+            fn.apply(context, args);
+          }, threshhold);
+        } else {
+          last = now;
+          fn.apply(context, args);
+        }
+      };
+    }
+
+    // debounce event function
+    function debounce(fn, delay) {
+      var timer = null;
+      return function () {
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          fn.apply(context, args);
+        }, delay);
+      };
+    }
   }
 }(window.jQuery);
 
